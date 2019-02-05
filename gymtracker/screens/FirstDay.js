@@ -8,7 +8,6 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import RepBox from '../components/RepBox';
 import SetFourToTwelve from '../components/SetFourToTwelve';
 
 export default class FirstDayScreen extends React.Component {
