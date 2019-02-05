@@ -3,11 +3,16 @@ import { Alert, Button, View, TouchableOpacity, Text, StyleSheet } from 'react-n
 
 // number of reps to do
 
-export default class SetBox extends React.Component {
+export default class RepBox extends React.Component {
   constructor(props) {
       super(props);
       this.counter = 0;
       this.state = {buttonPressStatus: styles.buttonContainerNotPressed}
+  }
+
+  handleHold = () => {
+    this.setState({buttonPressStatus: styles.buttonContainerNotPressed})
+    this.counter = 0;
   }
 
   handleTap = () => {
@@ -25,6 +30,7 @@ export default class SetBox extends React.Component {
             <TouchableOpacity
                 style={ this.state.buttonPressStatus }
                 onPress={this.handleTap}
+                onLongPress={this.handleHold}
                 >
                 <Text style={styles.text}>
                     {this.props.exerciseValue}

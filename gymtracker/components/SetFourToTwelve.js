@@ -1,8 +1,8 @@
 import React from 'react';
 import { Alert, Button, View, TouchableOpacity, Text, StyleSheet } from 'react-native';
-import SetBox from './setbox';
+import RepBox from './RepBox';
 
-export default class Set1 extends React.Component {
+export default class SetFourToTwelve extends React.Component {
   render() {
     return (
       <View style={{flex: 1}}>
@@ -10,9 +10,9 @@ export default class Set1 extends React.Component {
           <Text style={styles.text}>{this.props.exerciseName}</Text>
         </View>
         <View style={styles.boxView}>
-          <SetBox exerciseValue='6*12'></SetBox>
-          <SetBox exerciseValue='10*5'></SetBox>
-          <SetBox exerciseValue='4*8'></SetBox>
+          <RepBox exerciseValue='6*12'></RepBox>
+          <RepBox exerciseValue='10*5'></RepBox>
+          <RepBox exerciseValue='4*8'></RepBox>
         </View>
       </View>
     );

@@ -8,10 +8,8 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import SetBox from '../components/setbox';
-import Set1 from '../components/set1';
-
-import { MonoText } from '../components/StyledText';
+import RepBox from '../components/RepBox';
+import SetFourToTwelve from '../components/SetFourToTwelve';
 
 export default class FirstDayScreen extends React.Component {
   static navigationOptions = {
@@ -22,31 +20,31 @@ export default class FirstDayScreen extends React.Component {
       return(
         <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', marginTop: 20}}>
           <View style={styles.topView}>
-              <Set1 exerciseName='Incline Fly (Warmup)'></Set1>
+              <SetFourToTwelve exerciseName='Incline Fly (Warmup)'></SetFourToTwelve>
           </View>
           <View style={styles.hairline} />
           <View style={styles.topView}>
-              <Set1 exerciseName='Incline DB Press'></Set1>
+              <SetFourToTwelve exerciseName='Incline DB Press'></SetFourToTwelve>
           </View>
           <View style={styles.hairline} />
           <View style={styles.topView}>
-              <Set1 exerciseName='Machine Press'></Set1>
+              <SetFourToTwelve exerciseName='Machine Press'></SetFourToTwelve>
           </View>
           <View style={styles.hairline} />
           <View style={styles.topView}>
-              <Set1 exerciseName='Preacher Curl (Warmup)'></Set1>
+              <SetFourToTwelve exerciseName='Preacher Curl (Warmup)'></SetFourToTwelve>
           </View>
           <View style={styles.hairline} />
           <View style={styles.topView}>
-              <Set1 exerciseName='BB Curl'></Set1>
+              <SetFourToTwelve exerciseName='BB Curl'></SetFourToTwelve>
           </View>
           <View style={styles.hairline} />
           <View style={styles.topView}>
-              <Set1 exerciseName='Tricep Pressdown (Warmup; rope)'></Set1>
+              <SetFourToTwelve exerciseName='Tricep Pressdown (Warmup; rope)'></SetFourToTwelve>
           </View>
           <View style={styles.hairline} />
           <View style={styles.topView}>
-              <Set1 exerciseName='Overhead Cable Extension'></Set1>
+              <SetFourToTwelve exerciseName='Overhead Cable Extension'></SetFourToTwelve>
           </View>
         </View>
       );
