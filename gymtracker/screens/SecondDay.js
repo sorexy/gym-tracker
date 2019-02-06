@@ -51,6 +51,6 @@ const styles = StyleSheet.create({
               backgroundColor: 'yellow', paddingHorizontal: 30, marginTop: 10 },
     hairline: { backgroundColor: 'black',
                 height: 2,
-                width: 500 },
+                width: 500},
 
 });

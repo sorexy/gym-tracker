@@ -1,6 +1,7 @@
 import React from 'react';
 import { Alert, Button, View, TouchableOpacity, Text, StyleSheet } from 'react-native';
 import RepBox from './RepBox';
+import WeightBox from './WeightBox';
 
 export default class SetFourToTwelve extends React.Component {
   render() {
@@ -11,8 +12,9 @@ export default class SetFourToTwelve extends React.Component {
         </View>
         <View style={styles.boxView}>
           <RepBox exerciseValue='6*12'></RepBox>
-          <RepBox exerciseValue='10*5'></RepBox>
+          <RepBox exerciseValue='5*10'></RepBox>
           <RepBox exerciseValue='4*8'></RepBox>
+          <WeightBox></WeightBox>
         </View>
       </View>
     );
@@ -21,7 +23,7 @@ export default class SetFourToTwelve extends React.Component {
 
 const styles = StyleSheet.create({
   boxView: {flexDirection:'row', justifyContent: 'space-between',
-            alignItems: 'center', paddingVertical: 15, paddingHorizontal: 15},
+            alignItems: 'center', paddingVertical: 15, paddingHorizontal: 10},
 
   text: { alignItems: 'center', justifyContent: 'center', fontSize: 14, fontWeight: '700', color: 'black'},
 });

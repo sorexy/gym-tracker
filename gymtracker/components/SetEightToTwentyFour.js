@@ -1,6 +1,7 @@
 import React from 'react';
 import { Alert, Button, View, TouchableOpacity, Text, StyleSheet } from 'react-native';
 import RepBox from './RepBox';
+import WeightBox from './WeightBox';
 
 export default class SetEightToTwentyFour extends React.Component {
   render() {
@@ -13,6 +14,7 @@ export default class SetEightToTwentyFour extends React.Component {
           <RepBox exerciseValue='12*24'></RepBox>
           <RepBox exerciseValue='10*20'></RepBox>
           <RepBox exerciseValue='8*16'></RepBox>
+          <WeightBox></WeightBox>
         </View>
       </View>
     );

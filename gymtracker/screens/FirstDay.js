@@ -9,6 +9,7 @@ import {
   View,
 } from 'react-native';
 import SetFourToTwelve from '../components/SetFourToTwelve';
+import WeightBox from '../components/WeightBox';
 
 export default class FirstDayScreen extends React.Component {
   static navigationOptions = {
